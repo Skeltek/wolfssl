@@ -18,6 +18,13 @@ int  benchmark_init(void);
 int  benchmark_free(void);
 void benchmark_configure(int block_size);
 
+void bench_des(int);
+void bench_idea(void);
+void bench_arc4(int);
+void bench_hc128(void);
+void bench_rabbit(void);
+void bench_chacha(void);
+void bench_chacha20_poly1305_aead(void);
 void bench_aescbc(int);
 void bench_aesgcm(int);
 void bench_gmac(void);
@@ -27,7 +34,18 @@ void bench_aesxts(void);
 void bench_aesctr(void);
 void bench_aescfb(void);
 void bench_aesofb(void);
-
+void bench_poly1305(void);
+void bench_camellia(void);
+void bench_md5(int);
+void bench_sha(int);
+void bench_sha224(int);
+void bench_sha256(int);
+void bench_sha384(int);
+void bench_sha512(int);
+void bench_sha3_224(int);
+void bench_sha3_256(int);
+void bench_sha3_384(int);
+void bench_sha3_512(int);
 int  bench_ripemd(void);
 void bench_cmac(void);
 void bench_scrypt(void);
@@ -78,4 +96,3 @@ void bench_stats_print(void);
 
 
 #endif /* WOLFCRYPT_BENCHMARK_H */
-
